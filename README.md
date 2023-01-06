@@ -12,5 +12,4 @@ adicionalmente se mostró ese dato de entrada en decimal a partir de puerto seri
 
 Para controlar el dato de entrada se utilizó un Dip Switch de ocho posiciones, y para mostrar la salida se hizo uso de un arreglo de 8 leds.
 
-![datosBusDipSwitch_bb](https://user-images.githubusercontent.com/59096507/210120516-af186664-08a5-420b-822f-278885f72d65.jpg)
-
+![datosBusDipSwitch_bb](https://user-images.githubusercontent.com/59096507/211004610-f7776a48-32b9-460e-b5c3-80a9bb7b5f05.svg)
