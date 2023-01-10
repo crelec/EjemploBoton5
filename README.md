@@ -17,7 +17,7 @@ Para controlar el dato de entrada se utilizó un Dip Switch de ocho posiciones, 
 
 ## sprintf()
 
-`sprintf` es una función que se utiliza para formatear una cadena de texto. En este caso, se está utilizando para crear una cadena de texto que contiene el valor de `dato` seguido de un salto de línea `\n` y un retorno de carro `\r`. La cadena de texto resultante se almacena en la variable `mensaje`. Es importante tener en cuenta el espeficador de formato `%c` que nos proporciona el tipo de dato a visualizar por serial que en este caso la letra `**c**` indica dato de tipo caracter.
+`sprintf` es una función que se utiliza para formatear una cadena de texto. En este caso, se está utilizando para crear una cadena de texto que contiene el valor de `dato` seguido de un salto de línea `\n` y un retorno de carro `\r`. La cadena de texto resultante se almacena en la variable `mensaje`. Es importante tener en cuenta el espeficador de formato `%c` que nos proporciona el tipo de dato a visualizar por serial que en este caso la letra `c` indica dato de tipo caracter.
 
 Los especificadores de formato se pueden apreciar [aqui](https://learn.microsoft.com/es-es/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170#type-field-characters "Especificador de formato").
 
@@ -27,6 +27,6 @@ Es el que envía los datos a visualizar por serial, recibe como parámetros el d
 se incializó el puerto serial a partir de crear el objeto con el nombre `serial_port` y para hacer uso del método que escribe por serial se debe hacer uso del objeto así: `serial_port.write(dato , tamaño del dato)`.
 
 Para el primer ejemplo de visualización por serial, el dato contiene el valor de 64, pero debido a que se hace uso del especificador de formato char `%c` 
-el dato que se visualiza en puerto serial es `**@**`, debido a que es el caracter correspondiente a ese valor numérico.
+el dato que se visualiza en puerto serial es `@`, debido a que es el caracter correspondiente a ese valor numérico.
 
 Para visualizar que valor numérico es correspondiente a cada caracter, revisar la tabla ASCII, dar clic [aquí](https://elcodigoascii.com.ar/ "ASCII")
