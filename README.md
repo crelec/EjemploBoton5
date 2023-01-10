@@ -24,7 +24,7 @@ Los especificadores de formato se pueden apreciar [aqui](https://learn.microsoft
 
 ## Método write()
 Es el que envía los datos a visualizar por serial, recibe como parámetros el dato y la cantidad de bytes(tamaño del dato) que se desee visualizar. En este caso, 
-se incializó el puerto serial a partir de crear el objeto con el nombre `serial_port` y para hacer uso del método que escribe por serial se debe hacer uso del objeto así: `serial_port.write(dato , tamaño del dato)`.
+se incializó el puerto serial a partir de crear el objeto con el nombre `serial_port` y se usó el método `write()` para enviar la cadena de caracteres `mensaje` de la siguiente forma: `serial_port.write(mensaje, sizeof(mensaje))`. La función `sizeof()` retorna la cantidad de bytes de la estructura de datos de la variable enviada por parámetro.
 
 Para el primer ejemplo de visualización por serial, el dato contiene el valor de 64, pero debido a que se hace uso del especificador de formato char `%c` 
 el dato que se visualiza en puerto serial es `@`, debido a que es el caracter correspondiente a ese valor numérico.
